@@ -10,16 +10,17 @@ Add your answers to the questions below.
 
 
 5. What is the runtime complexity of the provided code in `names.py`?
- <!-- duplicates = [] 
+ <!-- duplicates = []
  for name_1 in names_1: O(n)
      for name_2 in names_2: O(n)
          if name_1 == name_2: O(1)
              duplicates.append(name_1) O(1)-->
 O(n^2), thanks to nested for loops.
 
-6. What is the space complexity of the provided code in `names.py`? O(n)? the names in the files aren't copied over or stored anywhere, but the list containing the duplicates would be expected to grow.
+6. What is the space complexity of the provided code in `names.py`? Assuming the two lists have different lengths: O(n*m)
 
 7. What is the runtime complexity of your optimized code in `names.py`?
 Now that I don't have anything nested and am just creating a dictionary with all of the names in one of the lists, I think it's O(n)
 8. What is the space complexity of your optimized code in `names.py`?
 Now that I am creating a dictionary to store the names from one of the list, I believe it is O(n), since that dictionary will need to be as large as the list being stored.
+O(n * n+m)
