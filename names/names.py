@@ -17,7 +17,7 @@ f.close()
 #     for name_2 in names_2:
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
-# solution 1 (under 1 second):
+# solution stretch runtime: 1.799881935119629 seconds:
 # duplicates = []
 # for name in names_1:
 #     if name in names_2:
