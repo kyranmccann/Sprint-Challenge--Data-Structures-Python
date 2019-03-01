@@ -22,5 +22,4 @@ O(n^2), thanks to nested for loops.
 7. What is the runtime complexity of your optimized code in `names.py`?
 Now that I don't have anything nested and am just creating a dictionary with all of the names in one of the lists, I think it's O(n)
 8. What is the space complexity of your optimized code in `names.py`?
-Now that I am creating a dictionary to store the names from one of the list, I believe it is O(n), since that dictionary will need to be as large as the list being stored.
-O(n * n+m)
+Using a set, it's O(n*n+m)
