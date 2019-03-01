@@ -17,9 +17,11 @@ Add your answers to the questions below.
              duplicates.append(name_1) O(1)-->
 O(n^2), thanks to nested for loops.
 
-6. What is the space complexity of the provided code in `names.py`? Assuming the two lists have different lengths: O(n*m)
+6. What is the space complexity of the provided code in `names.py`? Assuming the two lists have different lengths: O(Min(n,m))
+<!-- from the tutorial -->
 
 7. What is the runtime complexity of your optimized code in `names.py`?
 Now that I don't have anything nested and am just creating a dictionary with all of the names in one of the lists, I think it's O(n)
+
 8. What is the space complexity of your optimized code in `names.py`?
-Using a set, it's O(n*n+m)
+Using a set, it's O(n) + Min(n,m)
