@@ -2,7 +2,7 @@
 
 In this week's Sprint you implemented some classic and fundamental data structures and learned about how to go about evaluating their respective runtimes and performance. This Sprint Challenge aims to assess your comfort with these topics through exercises that build on the data structures you implemented and the algorithmic intuition you've started to build up.
 
-## Instructions
+## Instructions 
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -27,29 +27,29 @@ This Sprint Challenge is split into three parts:
 ### Minimum Viable Product
 
 
-#### Task 1. Implement Depth-First or Breadth-First Traversal on the Binary Search Tree Class 
+#### Task 1. Implement Depth-First or Breadth-First Traversal on the Binary Search Tree Class
 
 Navigate into the `search` directory. Inside, you'll see the `binary-search-tree.py` file with a complete implementation of the binary search tree class. Your first task is to implement either `depth_first_for_each` or `breadth_first_for_each` on the `BinarySearchTree` class:
 
-   * `depth_first_for_each(cb)` receives an anonymous function as a parameter. It should then execute the anonymous function on each node in the tree in [depth-first](https://en.wikipedia.org/wiki/Depth-first_search) order. Your task is to implement the logic to traverse the tree in depth-first pre-order fashion (as opposed to in-order or post-order). Note that the pseudocode showcased on the Wikipedia article traverses the tree in-order. 
+   * `depth_first_for_each(cb)` receives an anonymous function as a parameter. It should then execute the anonymous function on each node in the tree in [depth-first](https://en.wikipedia.org/wiki/Depth-first_search) order. Your task is to implement the logic to traverse the tree in depth-first pre-order fashion (as opposed to in-order or post-order). Note that the pseudocode showcased on the Wikipedia article traverses the tree in-order.
 
    * Remember that the anonymous function is supplied by the caller of the method. All you have to do is ensure that the anonymous function is being called on each tree node in the desired order.
-   
-     _HINT_: In order to achieve depth-first order, you'll probably want to utilize a Stack data structure. 
+
+     _HINT_: In order to achieve depth-first order, you'll probably want to utilize a Stack data structure.
 
      * Run `python test_depth_first_search.py` to test your depth-first search implementation.
 
    * `breadth_first_for_each(cb)` receives a callback function as a parameter. It should then execute the anonymous function on each node in the tree in [breadth-first](https://en.wikipedia.org/wiki/Breadth-first_search) order. Your task is to implement the logic to traverse the tree in left-to-right breadth-first fashion.
-   
+
    * Remember that the anonymous function is supplied by the caller of the method. All you have to do is ensure that the anonymous function is being called on each tree node in the desired order.
-   
+
      _HINT_: In order to achieve breadth-first order, you'll probably want to utilize a Queue data structure.
 
      * Run `python test_breadth_first_search.py` to test your breadth-first search implementation.
 
 > Note that in Python, anonymous functions are referred to as "lambda functions". When passing in an anonymous function as input to either `depth_first_for_each` or `breadth_first_for_each`, you'll want to define them as lambda functions. For more information on lambda functions, check out this documentation: [https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)
 
-> Note that it is not your job to worry about what the callback function being passed in is doing. That is up to the user of your traversal method. All you care about when implementing the traversal method is to call the passed-in callback in either depth-first or breadth-first order, depending on which traversal method you're implementing. 
+> Note that it is not your job to worry about what the callback function being passed in is doing. That is up to the user of your traversal method. All you care about when implementing the traversal method is to call the passed-in callback in either depth-first or breadth-first order, depending on which traversal method you're implementing.
 
 
 #### Task 2. Runtime Optimization
@@ -62,7 +62,7 @@ Six seconds is an eternity so you've been tasked with speeding up the code. Can 
 
 #### Task 3. Analyze some runtimes
 
-Open up the `Data_Structures_Answers.md` file. This is where you'll jot down your answers for the runtimes of the functions you just implemented. If you implemented depth-first traversal, just answer the questions pertaining to the depth-first traversal algorithm. If you implemented breadth-first traversal, just answer the questions pertaining to breadth-first traversal. 
+Open up the `Data_Structures_Answers.md` file. This is where you'll jot down your answers for the runtimes of the functions you just implemented. If you implemented depth-first traversal, just answer the questions pertaining to the depth-first traversal algorithm. If you implemented breadth-first traversal, just answer the questions pertaining to breadth-first traversal.
 
 Also, include the runtime and space complexities of the original code and your optimized solution from `names.py`.
 
