@@ -24,4 +24,4 @@ O(n^2), thanks to nested for loops.
 Now that I don't have anything nested and am just creating a dictionary with all of the names in one of the lists, I think it's O(n)
 
 8. What is the space complexity of your optimized code in `names.py`?
-Using a set, it's O(n) + Min(n,m)
+Using a set, it's O(n + Min(n,m))
